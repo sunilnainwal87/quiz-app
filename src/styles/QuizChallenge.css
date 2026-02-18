@@ -1,0 +1,9 @@
+.quiz-challenge-page {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.quiz-challenge-page .card {
+  max-width: 900px;
+  margin: 0 auto;
+}
