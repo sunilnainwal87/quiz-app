@@ -52,6 +52,7 @@ function Leaderboard({ currentPlayer, highlightSubject }: LeaderboardProps) {
           <option value="Science">Science</option>
           <option value="Geography">Geography</option>
           <option value="English">English</option>
+          <option value="Gymnastics">Gymnastics</option>
         </select>
       </div>
 

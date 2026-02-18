@@ -10,7 +10,8 @@ function SubjectSelection({ onSubjectSelect, playerName }: SubjectSelectionProps
     { name: 'Math', icon: '🔢', color: '#3b82f6' },
     { name: 'Science', icon: '🔬', color: '#10b981' },
     { name: 'Geography', icon: '🌍', color: '#f59e0b' },
-    { name: 'English', icon: '📚', color: '#8b5cf6' }
+    { name: 'English', icon: '📚', color: '#8b5cf6' },
+    { name: 'Gymnastics', icon: '🤸‍♀️', color: '#ec4899' }
   ];
 
   return (

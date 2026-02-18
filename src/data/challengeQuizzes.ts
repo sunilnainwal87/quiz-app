@@ -567,5 +567,146 @@ export const challengeQuizzes: Question[] = [
     options: ["i went to paris in may.", "I went to Paris in May.", "I Went To Paris In May.", "i Went to paris in May."],
     correctAnswer: 1,
     subject: "English"
+  },
+  // Gymnastics Questions (20)
+  {
+    id: 81,
+    question: "What is the term for a sideways hand-over-hand rotation?",
+    options: ["Handstand", "Cartwheel", "Round-off", "Walkover"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 82,
+    question: "How many events are in women's artistic gymnastics?",
+    options: ["2", "3", "4", "5"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 83,
+    question: "Who is the most decorated gymnast in World Championship history?",
+    options: ["Nadia Comăneci", "Simone Biles", "Gabby Douglas", "Mary Lou Retton"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 84,
+    question: "What should you always do before practicing gymnastics?",
+    options: ["Eat a big meal", "Warm up and stretch", "Practice your hardest skills", "Watch TV"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 85,
+    question: "What apparatus do gymnasts use to perform flips and tumbling passes with a spring?",
+    options: ["Balance Beam", "Floor Exercise Mat", "Vault", "Trampoline"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 86,
+    question: "Which gymnast was the first to score a perfect 10 at the Olympics?",
+    options: ["Simone Biles", "Nadia Comăneci", "Shannon Miller", "Dominique Dawes"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 87,
+    question: "What is the narrow apparatus that gymnasts perform on, requiring excellent balance?",
+    options: ["Uneven Bars", "Balance Beam", "Parallel Bars", "High Bar"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 88,
+    question: "What do we call the floor routine music length limit in competitions?",
+    options: ["30 seconds", "60 seconds", "90 seconds", "120 seconds"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 89,
+    question: "Which of these is an important skill for all gymnasts to develop?",
+    options: ["Running fast", "Flexibility", "Swimming", "Singing"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 90,
+    question: "What equipment helps gymnasts grip the bars better?",
+    options: ["Tape", "Grips", "Gloves", "Socks"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 91,
+    question: "In gymnastics, what does a back handspring involve?",
+    options: ["Jumping forward", "Flipping backward from your feet to your hands and back to your feet", "Doing a split", "Standing on one leg"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 92,
+    question: "What year did gymnastics become an Olympic sport?",
+    options: ["1896", "1920", "1950", "1984"],
+    correctAnswer: 0,
+    subject: "Gymnastics"
+  },
+  {
+    id: 93,
+    question: "Which American gymnast won the all-around gold medal at the 2012 Olympics?",
+    options: ["Simone Biles", "Gabby Douglas", "Aly Raisman", "McKayla Maroney"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 94,
+    question: "What is the highest score a gymnast can achieve under the current scoring system?",
+    options: ["10.0", "15.0", "There is no maximum", "100"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 95,
+    question: "What do gymnasts use to help absorb impact and prevent injuries?",
+    options: ["Helmets", "Mats", "Shin guards", "Knee pads"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 96,
+    question: "Which gymnastics move starts with your hands on the ground and your feet in the air?",
+    options: ["Cartwheel", "Split", "Handstand", "Bridge"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 97,
+    question: "What is the name of the apparatus with two bars at different heights?",
+    options: ["Parallel Bars", "Uneven Bars", "High Bar", "Pommel Horse"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 98,
+    question: "How wide is a balance beam?",
+    options: ["2 inches", "4 inches", "8 inches", "12 inches"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
+  },
+  {
+    id: 99,
+    question: "What type of training helps gymnasts build the strength needed for their sport?",
+    options: ["Only cardio", "Only flexibility", "Strength and conditioning", "Only balance exercises"],
+    correctAnswer: 2,
+    subject: "Gymnastics"
+  },
+  {
+    id: 100,
+    question: "What is a 'round-off' in gymnastics?",
+    options: ["A type of jump", "A cartwheel that lands with both feet together", "A flip", "A spin"],
+    correctAnswer: 1,
+    subject: "Gymnastics"
   }
 ];

@@ -3,7 +3,7 @@ export interface Question {
   question: string;
   options: string[];
   correctAnswer: number;
-  subject: 'Math' | 'Science' | 'Geography' | 'English';
+  subject: 'Math' | 'Science' | 'Geography' | 'English' | 'Gymnastics';
 }
 
 export interface LeaderboardEntry {
