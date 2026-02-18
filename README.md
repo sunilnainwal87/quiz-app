@@ -1,13 +1,19 @@
 # Quiz App
 
-A competitive quiz application with player tracking and leaderboard rankings.
+A competitive quiz application with leaderboard tracking and multiple subjects.
 
 ## Features
-- Multiple subjects: Math, Science, Geography, English
-- 20 questions per subject
-- Live timer tracking
-- Persistent leaderboard
+- Multiple subject quizzes (Math, Science, Geography, English)
 - Player name tracking
+- Live timer
+- Persistent leaderboard
+- Top 10 rankings
 
 ## Setup
 Coming soon...
+
+## Technologies
+- React
+- TypeScript
+- React Router
+- LocalStorage for persistence
