@@ -33,7 +33,7 @@ function Home() {
             <h2>How to Play</h2>
             <ol>
               <li>Enter your name to get started</li>
-              <li>Choose a subject: Math, Science, Geography, or English</li>
+              <li>Choose a subject: Math, Science, Geography, English, or Gymnastics</li>
               <li>Answer 20 questions as quickly as possible</li>
               <li>Submit your answers and see your score</li>
               <li>Check the leaderboard to see how you rank!</li>
