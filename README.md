@@ -11,6 +11,7 @@ A competitive quiz application built with React, TypeScript, and Vite. Test your
 - **Persistent Storage**: Your scores are saved locally
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **Accessible**: Built with ARIA labels and keyboard navigation support
+- **Daily Updates**: Automated fresh questions every day via GitHub Actions
 
 ## 🚀 Getting Started
 
@@ -116,6 +117,8 @@ The quiz questions are automatically refreshed daily at 2:00 AM UTC through a Gi
 - **Continuous learning**: Kids get new questions to keep them engaged
 
 The automation runs through the `RefreshQuestions` custom agent, which can also be triggered manually from the GitHub Actions tab.
+
+For detailed information about the automation, see [AUTOMATION.md](AUTOMATION.md).
 
 ## 🏆 Leaderboard
 
