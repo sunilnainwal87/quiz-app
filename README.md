@@ -79,7 +79,7 @@ npm run build
 npm run preview
 ```
 
-5. Clear your browser cache (Ctrl+Shift+R or Cmd+Shift+R) to ensure you see the latest changes
+**Note:** The development server includes hot module replacement (HMR), so changes should appear automatically. If changes don't appear, try a hard refresh (Ctrl+Shift+R or Cmd+Shift+R).
 
 **Troubleshooting:**
 - If you encounter dependency issues, try removing `node_modules` and reinstalling:
