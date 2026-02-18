@@ -12,6 +12,21 @@ A competitive quiz application built with React, TypeScript, and Vite. Test your
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **Accessible**: Built with ARIA labels and keyboard navigation support
 
+## 🚀 Quick Start
+
+```bash
+# First time setup
+git clone https://github.com/sunilnainwal87/quiz-app.git
+cd quiz-app
+npm install
+npm run dev
+
+# Update to latest changes
+git pull origin main
+npm install
+npm run dev
+```
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -38,6 +53,45 @@ npm run dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173`
+
+### Updating to Latest Changes
+
+If you've already cloned the repository and want to install the latest changes:
+
+1. Pull the latest code from the repository:
+```bash
+git pull origin main
+```
+
+2. Install any new dependencies (in case new packages were added):
+```bash
+npm install
+```
+
+3. If the development server is running, stop it (Ctrl+C) and restart:
+```bash
+npm run dev
+```
+
+4. If you had a production build running, rebuild it:
+```bash
+npm run build
+npm run preview
+```
+
+**Note:** The development server includes hot module replacement (HMR), so changes should appear automatically. If changes don't appear, try a hard refresh (Ctrl+Shift+R or Cmd+Shift+R).
+
+**Troubleshooting:**
+- If you encounter dependency issues, try removing `node_modules` and reinstalling:
+  ```bash
+  rm -rf node_modules package-lock.json
+  npm install
+  ```
+- If changes don't appear, ensure you're on the correct branch:
+  ```bash
+  git branch
+  git checkout main  # or the branch you want to use
+  ```
 
 ### Build for Production
 
