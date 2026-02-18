@@ -1,0 +1,55 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--card-background);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.modal-description {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.name-input {
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+}
+
+.modal-content .btn {
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 24px;
+  }
+}
