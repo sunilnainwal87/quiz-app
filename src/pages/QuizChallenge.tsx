@@ -49,10 +49,7 @@ function QuizChallenge() {
     saveLeaderboardEntry(entry);
 
     navigate('/results', {
-      state: {
-        ...entry,
-        playerName
-      }
+      state: entry
     });
   };
 

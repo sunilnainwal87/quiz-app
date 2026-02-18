@@ -13,23 +13,23 @@ function Leaderboard({ currentPlayer, highlightSubject }: LeaderboardProps) {
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
 
   useEffect(() => {
+    const loadEntries = (subject: string) => {
+      const allEntries = getLeaderboardBySubject(subject);
+      
+      // Sort by score (descending), then by time (ascending)
+      const sorted = allEntries.sort((a, b) => {
+        if (b.score !== a.score) {
+          return b.score - a.score;
+        }
+        return a.timeTaken - b.timeTaken;
+      });
+      
+      // Take top 10
+      setEntries(sorted.slice(0, 10));
+    };
+
     loadEntries(filter);
   }, [filter]);
-
-  const loadEntries = (subject: string) => {
-    const allEntries = getLeaderboardBySubject(subject);
-    
-    // Sort by score (descending), then by time (ascending)
-    const sorted = allEntries.sort((a, b) => {
-      if (b.score !== a.score) {
-        return b.score - a.score;
-      }
-      return a.timeTaken - b.timeTaken;
-    });
-    
-    // Take top 10
-    setEntries(sorted.slice(0, 10));
-  };
 
   const formatTime = (seconds: number): string => {
     const mins = Math.floor(seconds / 60);
