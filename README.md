@@ -1,15 +1,7 @@
 # Quiz App
 
-A competitive quiz application with player tracking and leaderboards.
+A competitive quiz application with leaderboard and player tracking.
 
-## Features
-- Multiple subjects (Math, Science, Geography, English)
-- Player name tracking
-- Live timer
-- Persistent leaderboard rankings
+## Getting Started
 
-## Setup
-```bash
-npm install
-npm start
-```
+More documentation coming soon...
