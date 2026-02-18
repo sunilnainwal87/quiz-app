@@ -11,6 +11,7 @@ A competitive quiz application built with React, TypeScript, and Vite. Test your
 - **Persistent Storage**: Your scores are saved locally
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **Accessible**: Built with ARIA labels and keyboard navigation support
+- **Daily Updates**: Automated fresh questions every day via GitHub Actions
 
 ## 🚀 Quick Start
 
@@ -161,6 +162,17 @@ The app includes 80 carefully crafted questions:
 - **Science**: Biology, chemistry, physics, earth science
 - **Geography**: Countries, capitals, landmarks, continents
 - **English**: Grammar, vocabulary, literature, comprehension
+
+### 🔄 Automated Daily Updates
+
+The quiz questions are automatically refreshed daily at 2:00 AM UTC through a GitHub Actions workflow. This ensures:
+- **Fresh content**: 20 new questions added every day across all categories
+- **Category of the Day**: Special daily category to keep content interesting
+- **Continuous learning**: Kids get new questions to keep them engaged
+
+The automation runs through the `RefreshQuestions` custom agent, which can also be triggered manually from the GitHub Actions tab.
+
+For detailed information about the automation, see [AUTOMATION.md](AUTOMATION.md).
 
 ## 🏆 Leaderboard
 
