@@ -96,6 +96,60 @@ function Results() {
           </div>
         </div>
 
+        {result.questions && result.userAnswers && (
+          <div className="answer-review card">
+            <h2 className="review-title">📚 Review Your Answers</h2>
+            <p className="review-subtitle">Learn from the correct answers and explanations!</p>
+            <div className="review-list">
+              {result.questions.map((question, index) => {
+                const userAnswer = result.userAnswers![index];
+                const isCorrect = userAnswer === question.correctAnswer;
+                const wasAnswered = userAnswer !== -1;
+                
+                return (
+                  <div 
+                    key={question.id} 
+                    className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}
+                  >
+                    <div className="review-header">
+                      <span className="review-number">Question {index + 1}</span>
+                      <span className={`review-badge ${isCorrect ? 'badge-correct' : 'badge-incorrect'}`}>
+                        {isCorrect ? '✓ Correct' : '✗ Wrong'}
+                      </span>
+                    </div>
+                    
+                    <div className="review-question">{question.question}</div>
+                    
+                    <div className="review-answers">
+                      {wasAnswered && (
+                        <div className={`review-answer ${isCorrect ? 'answer-correct' : 'answer-wrong'}`}>
+                          <strong>Your answer:</strong> {question.options[userAnswer]}
+                        </div>
+                      )}
+                      {!wasAnswered && (
+                        <div className="review-answer answer-skipped">
+                          <strong>Your answer:</strong> No answer selected
+                        </div>
+                      )}
+                      {!isCorrect && (
+                        <div className="review-answer answer-correct">
+                          <strong>Correct answer:</strong> {question.options[question.correctAnswer]}
+                        </div>
+                      )}
+                    </div>
+                    
+                    {question.explanation && (
+                      <div className="review-explanation">
+                        <strong>💡 Explanation:</strong> {question.explanation}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         <Leaderboard
           currentPlayer={result.playerName}
           highlightSubject={result.subject}
