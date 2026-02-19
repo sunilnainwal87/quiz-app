@@ -4,6 +4,7 @@ export interface Question {
   options: string[];
   correctAnswer: number;
   subject: 'Math' | 'Science' | 'Geography' | 'English' | 'Gymnastics';
+  explanation?: string;
 }
 
 export interface LeaderboardEntry {
