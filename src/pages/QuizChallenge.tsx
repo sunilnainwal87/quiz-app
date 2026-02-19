@@ -37,7 +37,7 @@ function QuizChallenge() {
       if (answers[index] === question.correctAnswer) {
         correctAnswers++;
       } else {
-        // Count both incorrect answers and unanswered questions as wrong
+        // Count all non-correct answers (incorrect and unanswered) as wrong
         wrongAnswers++;
       }
     });
