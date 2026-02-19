@@ -36,7 +36,8 @@ function QuizChallenge() {
     quizQuestions.forEach((question, index) => {
       if (answers[index] === question.correctAnswer) {
         correctAnswers++;
-      } else if (answers[index] !== -1) {
+      } else {
+        // Count both incorrect answers and unanswered questions as wrong
         wrongAnswers++;
       }
     });
