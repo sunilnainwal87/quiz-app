@@ -52,7 +52,9 @@ function QuizChallenge() {
       subject: selectedSubject,
       timestamp: new Date().toISOString(),
       correctAnswers,
-      wrongAnswers
+      wrongAnswers,
+      questions: quizQuestions,
+      userAnswers: answers
     };
 
     saveLeaderboardEntry(entry);

@@ -23,4 +23,6 @@ export interface QuizResult {
   subject: string;
   correctAnswers?: number;
   wrongAnswers?: number;
+  questions?: Question[];
+  userAnswers?: number[];
 }
