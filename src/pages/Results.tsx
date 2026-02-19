@@ -58,15 +58,25 @@ function Results() {
             </div>
             
             <div className="stat">
-              <div className="stat-label">Time</div>
-              <div className="stat-value">{formatTime(result.timeTaken)}</div>
-              <div className="stat-subtext">Total time</div>
+              <div className="stat-label">Correct</div>
+              <div className="stat-value correct-count">
+                {result.correctAnswers !== undefined ? result.correctAnswers : result.score}
+              </div>
+              <div className="stat-subtext">✓ Right answers</div>
             </div>
             
             <div className="stat">
-              <div className="stat-label">Subject</div>
-              <div className="stat-value">{result.subject}</div>
-              <div className="stat-subtext">Quiz category</div>
+              <div className="stat-label">Wrong</div>
+              <div className="stat-value wrong-count">
+                {result.wrongAnswers !== undefined ? result.wrongAnswers : result.totalQuestions - result.score}
+              </div>
+              <div className="stat-subtext">✗ Incorrect answers</div>
+            </div>
+            
+            <div className="stat">
+              <div className="stat-label">Time</div>
+              <div className="stat-value">{formatTime(result.timeTaken)}</div>
+              <div className="stat-subtext">Total time</div>
             </div>
           </div>
 
