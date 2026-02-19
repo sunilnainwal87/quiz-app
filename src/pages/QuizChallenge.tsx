@@ -30,12 +30,18 @@ function QuizChallenge() {
   };
 
   const handleQuizComplete = (answers: number[], timeTaken: number) => {
-    let score = 0;
+    let correctAnswers = 0;
+    let wrongAnswers = 0;
+    
     quizQuestions.forEach((question, index) => {
       if (answers[index] === question.correctAnswer) {
-        score++;
+        correctAnswers++;
+      } else if (answers[index] !== -1) {
+        wrongAnswers++;
       }
     });
+
+    const score = correctAnswers;
 
     const entry = {
       playerName,
@@ -43,7 +49,9 @@ function QuizChallenge() {
       totalQuestions: quizQuestions.length,
       timeTaken,
       subject: selectedSubject,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      correctAnswers,
+      wrongAnswers
     };
 
     saveLeaderboardEntry(entry);

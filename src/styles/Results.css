@@ -53,6 +53,14 @@
   margin-bottom: 4px;
 }
 
+.stat-value.correct-count {
+  color: #22c55e;
+}
+
+.stat-value.wrong-count {
+  color: #ef4444;
+}
+
 .stat-subtext {
   color: var(--text-secondary);
   font-size: 14px;

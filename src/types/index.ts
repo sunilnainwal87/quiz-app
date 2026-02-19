@@ -20,4 +20,6 @@ export interface QuizResult {
   totalQuestions: number;
   timeTaken: number;
   subject: string;
+  correctAnswers?: number;
+  wrongAnswers?: number;
 }
